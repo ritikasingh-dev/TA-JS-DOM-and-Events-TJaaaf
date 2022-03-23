@@ -17,10 +17,10 @@ function generateRandomColor(){
                     'd',
                     'e',
                     'f'];
-     let color = '#';
+     let color = "#";
      for(let i=0;i<6;i++){
          let randomNumber = Math.floor(Math.random() * 16);
-         color = color + hexCharacters[randomNumber];
+         color = color + hexCharacters[randomColor];
      }  
      return color;             
 }
@@ -31,10 +31,4 @@ function handleClick(){
     firstBox.style.backgroundColor = randomColor;
 }
 firstBox.addEventListener("click",handleClick);
-secondBox.addEventListener("mousemove",handleMouseMove);
-
-function handleMouseMove(){
-    let randomColor = generateRandomColor();
-    // 2. change background color
-    secondBox.style.backgroundColor = randomColor;
-}
+secondBox.addEventListener("mousemove",handleMouseMove)
