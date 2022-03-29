@@ -8,3 +8,6 @@
 #### Final Output
 
 ![Flip Box](./assets/flip.png)
+1. select the small boxes because we want to click them 
+2. when we click they should show number, addeventlistener (click)-> show number, then disappear
+ 
