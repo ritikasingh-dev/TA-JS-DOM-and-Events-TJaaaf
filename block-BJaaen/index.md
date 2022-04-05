@@ -9,12 +9,15 @@
 
 ```html
 <!-- Rock -->
+
 <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
 
 <!-- Paper -->
+
 <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
 
 <!-- Scissors -->
+
 <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
 ```
 
