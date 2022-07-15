@@ -2,7 +2,7 @@ let firstBox = document.querySelector('.first');
 let secondBox = document.querySelector('.second');
 
 function generateRandomColor(){
-    let hexCharacters = ['1',    
+    let hexCharacters = ['1',   
                     '2',
                     '3',
                     '4',
