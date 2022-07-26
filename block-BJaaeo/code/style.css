@@ -1,0 +1,18 @@
+.container {
+    width: 60%;
+}
+.display {
+    width: 50%;
+    height: 88px;
+    background-color: rgb(241, 229, 229);
+}
+.grid-container {
+    width: 60%;
+}
+button {
+    width: 92px;
+    height: 92px;
+}
+.reset {
+   width: 80%;
+}
