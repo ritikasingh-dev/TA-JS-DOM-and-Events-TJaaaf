@@ -90,4 +90,9 @@ input[type='text'] {
 }
 .terms {
   display: inline-block;
+} 
+i {
+  color: #8020cf;
+  width: 32px;
+  height: 21px;
 }
