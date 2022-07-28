@@ -35,3 +35,23 @@ img {
   max-width: 100%;
   height: auto;
 }
+.container {
+  margin: 40px auto;
+}
+.form_control {
+  margin: 14px;
+  padding: 20px;
+}
+.success {
+  border: 2px solid green;
+}
+.error {
+  border: 2px solid red;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex {
+  display: flex;
+}
