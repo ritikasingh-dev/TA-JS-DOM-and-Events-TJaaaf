@@ -35,6 +35,7 @@
 // form.addEventListener("submit",submitform);
 
 let form = document.querySelector("form");
+let modal = document.querySelector("modal");
 
 let userInfo = {};
 
@@ -42,22 +43,27 @@ function submitForm( event ){
 
     event.preventDefault();
 
-    userInfo.name = form.elements.text.value;
-    userInfo.email = form.elements.email.value;
-    userInfo.gender = form.elements.gender.value;
-    userInfo.color = form.elements.color.value;
-    userInfo.range = form.elements.range.value;
-    userInfo.fiction = form.elements.fiction.value;
-    userInfo.non_fiction = form.elements.non_fiction.value;
-    userInfo.adventure = form.elements.adventure.value;
-    userInfo.terms = form.elements.terms.value;
+    console.log(event.target.elements.name.value);
 
-      userInfo.forEach(element => {
-          let li = document.createElement("li");
-          li.innerText = element.value;
-        
-    });
+    userInfo.name = event.target.elements.text.value;
+    userInfo.email = event.target.elements.email.value;
+    userInfo.gender = event.target.elements.gender.value;
+    userInfo.color = event.target.elements.color.value;
+    userInfo.range = event.target.elements.range.value;
+   userInfo.genre = event.target.elements.drone.value;
+    userInfo.terms = event.target.elements.terms.value;
 
+    modal.classList.add("open");
+
+    let close = document.addEventListener("modal-close");
+
+    close.addEventListener("click", ()=> {
+        modal.classList.remove("open");
+    })
 }
+
+      
+
+
 
 form.addEventListener("submit", submitForm );
