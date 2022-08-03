@@ -1,6 +1,11 @@
 let todo = document.querySelector("#text");
 let root = document.querySelector("ul");
 
+let all = document.querySelector(".all");
+let active = document.querySelector(".active");
+let completed = document.querySelector(".completed");
+let clearCourse = document.querySelector("clear");
+
 let todoList = [
 ];
 
@@ -63,7 +68,7 @@ function createUI(){
         p.innerText = todo.task;
         let span = document.createElement("span");
         span.innerText = "x";
-        span.addEventListener(click , handleDelete);
+        span.addEventListener("click" , handleDelete);
         span.setAttribute("data-id", index);
 
         li.append(input,p,span) ;
@@ -78,3 +83,13 @@ function createUI(){
 console.log(createUI());
 
 todo.addEventListener("keyup",handleInput );
+all.classList.add("active");
+
+clearCourse.addEventListener("click" , () => {
+   todoList = todoList.filter((todo) => !todo.isDone);
+   createUI();
+})
+active.addEventListener("click" , () => {
+    let notcompleted = todoList.filter((todo) => !todo.isDone);
+    createUI(notcompleted);
+ })
